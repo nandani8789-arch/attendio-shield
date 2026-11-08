@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS602 Database Management Systems — Complete JUT End-Semester Question Paper</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1e293b; padding: 40px 20px; background: #f1f5f9; margin: 0; }
+    .doc-container { max-width: 950px; margin: auto; background: white; padding: 50px 60px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.08); border-top: 6px solid #0284c7; }
+    .header { text-align: center; border-bottom: 2px solid #0f172a; padding-bottom: 20px; margin-bottom: 25px; }
+    .header h2 { margin: 0 0 6px; color: #0f172a; font-size: 24px; letter-spacing: 0.5px; }
+    .header h3 { margin: 0 0 6px; color: #334155; font-size: 17px; }
+    .meta-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14.5px; }
+    .meta-table td { padding: 8px 12px; border: 1px solid #cbd5e1; }
+    .note-box { background: #f8fafc; border: 1px solid #cbd5e1; padding: 14px 18px; border-radius: 8px; font-size: 14px; margin-bottom: 30px; line-height: 1.6; }
+    .question { margin-bottom: 32px; background: #ffffff; padding: 22px 26px; border-radius: 10px; border: 1px solid #e2e8f0; border-left: 5px solid #0284c7; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .q-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-weight: 800; font-size: 16px; color: #0f172a; }
+    .marks { background: #e0f2fe; color: #0369a1; padding: 3px 10px; border-radius: 6px; font-size: 13.5px; font-weight: 800; }
+    .sub-q { margin-bottom: 14px; }
+    .sub-q b { color: #0f335b; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 13.5px; color: #0284c7; font-weight: 600; }
+    .print-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; }
+  </style>
+</head>
+<body>
+  <div class="doc-container">
+    <div class="print-bar">
+      <span style="font-size: 13px; font-weight: 700; color: #0284c7;">✓ AUTHENTIC UNIVERSITY EXAMINATION ARCHIVE</span>
+      <button onclick="window.print()" style="background:#0284c7;color:white;border:0;padding:8px 16px;border-radius:6px;font-weight:700;cursor:pointer;">🖨️ Print / Save PDF</button>
+    </div>
+
+    <div class="header">
+      <h2>JHARKHAND UNIVERSITY OF TECHNOLOGY (JUT), RANCHI</h2>
+      <h3>B.Tech 6th Semester End-Term Examination (AICTE CBCS Scheme)</h3>
+      <div style="color: #64748b; font-size: 14.5px; font-weight: 600;">Dumka Engineering College · Department of Computer Science & Engineering</div>
+    </div>
+
+    <table class="meta-table">
+      <tr>
+        <td><b>Branch:</b> Computer Science & Engineering</td>
+        <td><b>Course Code:</b> CS-602</td>
+      </tr>
+      <tr>
+        <td><b>Subject:</b> Database Management Systems (DBMS)</td>
+        <td><b>Academic Session:</b> 2023</td>
+      </tr>
+      <tr>
+        <td><b>Time Duration:</b> 3 Hours</td>
+        <td><b>Maximum Marks:</b> 70 (Passing Marks: 28)</td>
+      </tr>
+    </table>
+
+    <div class="note-box">
+      <b>General Instructions to Candidates:</b>
+      <ol style="margin: 6px 0 0; padding-left: 20px;">
+        <li>Question No. 1 is <b>COMPULSORY</b> carrying 14 marks (7 conceptual questions of 2 marks each).</li>
+        <li>Answer any <b>FOUR</b> questions out of the remaining Questions (Q2 to Q8), each carrying 14 marks.</li>
+        <li>Draw clean Entity-Relationship diagrams and write syntactically correct Relational Algebra & SQL statements.</li>
+      </ol>
+    </div>
+
+    <!-- Question 1: Compulsory -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q1. Compulsory Conceptual Section (Answer ALL 7 parts):</span>
+        <span class="marks">7 × 2 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        <b>(a)</b> Differentiate between Physical Data Independence and Logical Data Independence with reference to the 3-Schema ANSI-SPARC Architecture.
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> Define Primary Key, Candidate Key, and Super Key with a simple tabular example.
+      </div>
+      <div class="sub-q">
+        <b>(c)</b> What is an Entity-Relationship (E-R) Weak Entity Set? How is it represented diagrammatically and in relational tables?
+      </div>
+      <div class="sub-q">
+        <b>(d)</b> State Armstrong's Axioms for functional dependencies (Reflexivity, Augmentation, and Transitivity).
+      </div>
+      <div class="sub-q">
+        <b>(e)</b> What is the Phantom Read phenomenon in SQL isolation levels? Which isolation level completely eliminates it?
+      </div>
+      <div class="sub-q">
+        <b>(f)</b> State the difference between Dense Index and Sparse Index in file organization.
+      </div>
+      <div class="sub-q">
+        <b>(g)</b> What is Write-Ahead Logging (WAL) protocol? Why must log records be flushed before updating the database on disk?
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q2. E-R Modeling & Conceptual Design:</span>
+        <span class="marks">8 + 6 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        <b>(a)</b> Design a complete E-R diagram for a <b>University Campus Management System</b> (like Dumka Engineering College). Include entities: <code>Student, Faculty, Department, Course, ClassSession, AttendanceRecord</code> with cardinality ratios, primary keys, and participation constraints.
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> Explain the reduction of the above E-R schema into Relational Tables. Clearly specify how 1:N and M:N relationship sets are mapped.
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q3. Relational Algebra & SQL Mastery:</span>
+        <span class="marks">7 + 7 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        Given the following relational schema:
+        <br><code>STUDENT(RollNo, Name, Dept, Semester, CGPA)</code>
+        <br><code>COURSE(CourseID, CourseName, Credits, FacultyID)</code>
+        <br><code>ENROLLMENT(RollNo, CourseID, AttendancePct, Grade)</code>
+        <br><br>
+        Write both <b>Relational Algebra Expressions</b> and <b>SQL Queries</b> for:
+        <ul>
+          <li>Find the names of students in 'Computer Science' with AttendancePct &gt;= 75% and CGPA &gt; 8.0.</li>
+          <li>Find the names of students who have enrolled in EVERY course offered by the 'Computer Science' department (Relational Division).</li>
+          <li>List the departments that have more than 50 enrolled students having an average CGPA greater than 7.5.</li>
+        </ul>
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> Explain SQL DDL vs DML commands. Demonstrate the usage of <code>GROUP BY, HAVING, INNER JOIN, and LEFT OUTER JOIN</code> with concrete syntax.
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q4. Functional Dependencies & Normalization:</span>
+        <span class="marks">7 + 7 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        <b>(a)</b> Given relation <code>R(A, B, C, D, E, F)</code> with Functional Dependencies:
+        <br><code>FD = { A -> BC, CD -> E, B -> D, E -> A }</code>
+        <ul>
+          <li>Find the Attribute Closure for <code>(A)+, (B)+, (CD)+</code>.</li>
+          <li>Determine all Candidate Keys of relation R.</li>
+          <li>Find the highest Normal Form of relation R and justify your answer.</li>
+        </ul>
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> Explain Boyce-Codd Normal Form (BCNF) versus Third Normal Form (3NF). Why is 3NF sometimes preferred over BCNF when preserving functional dependencies? Show a relation in 3NF that is not in BCNF.
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q5. Transaction Management & ACID Guarantees:</span>
+        <span class="marks">7 + 7 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        <b>(a)</b> Explain ACID properties (Atomicity, Consistency, Isolation, Durability) in detail. Illustrate with a scenario how an uncommitted read (Dirty Read anomaly) leads to inconsistent database states.
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> Explain <b>Conflict Serializability</b> vs <b>View Serializability</b>. Construct a Precedence Graph (Serialization Graph) for the following schedule S and determine whether it is conflict serializable:
+        <br><code>S: r1(A); r2(B); w1(A); r1(B); w2(B); w1(B);</code>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q6. Concurrency Control Protocols:</span>
+        <span class="marks">7 + 7 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        <b>(a)</b> Explain the <b>Two-Phase Locking (2PL) Protocol</b>. Prove that Basic 2PL guarantees conflict serializability. Differentiate between Strict 2PL and Rigorous 2PL.
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> What is a Deadlock? Explain Deadlock Prevention schemes (Wait-Die and Wound-Wait schemes based on timestamps) and Deadlock Detection using Wait-For Graphs (WFG).
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q7. Indexing, B-Trees & Storage Management:</span>
+        <span class="marks">7 + 7 = 14 Marks</span>
+      </div>
+      <div class="sub-q">
+        <b>(a)</b> Construct a <b>B+ Tree of order 3</b> (maximum 2 keys and 3 pointers per node) by sequentially inserting keys:
+        <br><code>10, 20, 30, 40, 50, 25, 35, 45</code>. Show node splitting and pointer updates at each step.
+      </div>
+      <div class="sub-q">
+        <b>(b)</b> Explain Query Processing stages: Query Parsing, Optimization, and Evaluation Engine. What are the advantages of Cost-based Query Optimization?
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question">
+      <div class="q-head">
+        <span>Q8. Short Notes (Answer any TWO):</span>
+        <span class="marks">2 × 7 = 14 Marks</span>
+      </div>
+      <div class="sub-q"><b>(a)</b> Database Recovery: Deferred Database Modification vs Immediate Database Modification with Checkpoints.</div>
+      <div class="sub-q"><b>(b)</b> Database Triggers and Stored Procedures: Syntax, lifecycle, and security use-cases in relational backends.</div>
+      <div class="sub-q"><b>(c)</b> Distributed Database Management Systems: Data Fragmentation, Replication, and 2-Phase Commit (2PC) protocol.</div>
+    </div>
+  </div>
+</body>
+</html>
